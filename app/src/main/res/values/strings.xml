@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Peliculas</string>
+    <string-array name="salas">
+        <item>Gran Vía</item>
+        <item>Travesía</item>
+        <item>Plaza elíptica</item>
+    </string-array>
+</resources>

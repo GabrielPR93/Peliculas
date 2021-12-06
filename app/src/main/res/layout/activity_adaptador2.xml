@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageViewCaratula2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textViewTitulo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCaratula2"
+        app:layout_constraintTop_toTopOf="@+id/imageViewCaratula2" />
+
+    <TextView
+        android:id="@+id/textViewDirector2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewTitulo2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo2" />
+
+    <ImageView
+        android:id="@+id/imageViewEdad2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="62dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="@+id/corazon"
+        app:layout_constraintStart_toEndOf="@+id/corazon"
+        app:srcCompat="@drawable/g" />
+
+    <TextView
+        android:id="@+id/textViewDuracion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewsfecha"
+        app:layout_constraintTop_toBottomOf="@+id/textViewsfecha" />
+
+    <TextView
+        android:id="@+id/textViewSala2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewDuracion2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDuracion2" />
+
+    <TextView
+        android:id="@+id/textViewsfecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewDirector2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDirector2" />
+
+    <CheckBox
+        android:id="@+id/corazon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="24dp"
+        android:button="@drawable/ic_baseline_favorite_24"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewSala2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSala2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
